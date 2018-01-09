@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 //fruits route
 app.get('/fruits', (req, res) => {
-    res.send(fruits)
+    res.render("index.ejs")
 })
 
 //show route for specific fruit
