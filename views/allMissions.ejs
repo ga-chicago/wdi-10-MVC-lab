@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+	<h1>All Mars missions to date</h1>
+<!-- loop through fruits and list in li -->
+
+<h3>
+    <% for( i=0; i<mission.length; i++) { %>
+        <li>
+            <a href='/mm/<%=[i]%>'>
+                <%=mission[i].name %>
+            </a>
+        </li>
+    <% } %>
+</h3>
+
+
+
+</body>
+</html>
