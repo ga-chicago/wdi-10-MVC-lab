@@ -14,7 +14,9 @@ app.get("/", (req, res) => {
 
 
 app.get("/fruits", (req, res) => {
-	res.render("index.ejs")
+	res.render("index.ejs", {
+		fruit: fruits
+	})
 	// console.log("In index")
 	// res.render("show.ejs")
 
