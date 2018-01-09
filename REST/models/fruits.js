@@ -13,13 +13,13 @@ const fruits = [
 
 	{
 	name: 'pear',
-	color: 'green',
+	color: 'light green',
 	readyToEat: true
 	}, 
 
 	{
 	name: 'guava',
-	color: 'orange',
+	color: 'bright green',
 	readyToEat: true
 	}, 
 
