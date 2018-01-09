@@ -5,14 +5,17 @@
 	<title>Fruits</title>
 </head>
 <body>
-	<h1>This is a page of fruits</h1>
-	<p>Click one!</p>
+	<h1>Welcome to the fruit page!</h1>
 
-	<a href="./fruits/apple">Apple</a>
-	<a href="./fruits/banana">Banana</a>
-	<a href="./fruits/pear">Pear</a>
-	<a href="./fruits/guava">Guava</a>
-	<a href="./fruits/pineapple">Pineapple</a>
-	
+	The <%=fruit.name; %> is <%=fruit.color; %>.
+
+	<% if(fruit.readyToEat == true) { %>
+		It is ready to eat!
+	<%} else { %>
+		It is ABSOLUTELY NOT ready to eat. Do not put that in your mouth.
+	<%} %>
+
+	<a href="/fruits">Pick another fruit</a>		
+
 </body>
 </html>
