@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	The <%=marsMissions.name; %> was launched by <%=marsMissions.operator; %> on <%=marsMissions.launchDate; %>.	
+	</br>
+	<% if (marsMissions.missionType == 'Rover') { %>
+		It was intended to be a Rover mission; meaning they designed it to land on, and study, Mars.
+	<% } else { %>
+		It was on a Gravity Assist mission, passing right by Mars at only a distance of 250km and studying it from space, before using Mars' field of gravity to slingshot further into the Solar System.
+	<% } %>
+	</br>
+	<a href="http://localhost:3000/index/">Return to Mission list</a>
+
+</body>
+</html>
