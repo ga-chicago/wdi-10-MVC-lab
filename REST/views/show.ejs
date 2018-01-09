@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>Fruits "show" page</h1>
+	<p>this is a fruit page I love fruits, fruits are awesome</p>
+	<p><a href="/fruits">back to home</a></p>
+
+
+	<!-- Using new tags -->
+	The <%=fruit.name; %> is <%=fruit.color; %>. 
+
+	<% if(fruit.readyToEat == true) { %>	
+		<!-- Don't do this formatting in real life -->
+		<font color="green">Eat that stuff! </font>
+	<% } else { %>
+		<!-- Don't do this formatting in real life -->
+		<font color ="red"> Don't eat that stuff! </font>
+	<% } %>
+
+
+</body>
+</html>
