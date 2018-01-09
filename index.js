@@ -15,18 +15,21 @@ app.get('/', (req,res) => {
 
 
 app.get('/fruit', (req,res) => {
-	res.send(fruit);
+	res.render('show.ejs', {
+		fruit: fruit[req.params.id]
+	});
 })
 
 
 app.get('/fruit/:id', (req,res) => {
 
-	//WE'RE GONNA MAKE THIS ALSO SEND AN OBJECT WITH OUT DATA
+	//WE'RE GONNA MAKE THIS ALSO SEND AN OBJECT WITH OUR DATA
 	//THE SECOND PARAMETER MUST BE AN OBJECT
 	//we're going to use that object to include data in our template
 	//res.render() 'renders' a template / view, whereas res.send just sends text
-	res.render('show.ejs', {
+	res.render('showfruit.ejs', {
 		fruit: fruit[req.params.id]
+	})
 	});
 
 
@@ -42,7 +45,7 @@ app.get('/fruit/:id', (req,res) => {
 	// }
 	// responseString += 'ready to eat';
 	// res.send(''+responseString);
-})
+// })
 
 
 
