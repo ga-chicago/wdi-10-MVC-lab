@@ -1,6 +1,6 @@
 // DEPENDENCIES
-const express = require('express');
-const app = express();
+// const express = require('express');
+// const app = express();
 
 // run `npm install` to install dependencies in package.json
 
@@ -68,8 +68,8 @@ const marsMissions = [
 // send data to 'missions/show.ejs' view
 // the view should display all the data for a single mission
 
-
+module.exports = marsMissions;
 // LISTENER
-app.listen(port, function() {
-  console.log('Missions to Mars running on port: ', port);
-})
+// app.listen(port, function() {
+//   console.log('Missions to Mars running on port: ', port);
+// })

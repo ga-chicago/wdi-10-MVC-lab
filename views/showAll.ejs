@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Fruits "show" page</h1>
+	<h3>this a list of fruits</h3>
+<!-- loop through fruits and list in li -->
+
+<ul>
+    <% for( i=0; i<fruit.length; i++) { %>
+        <li>
+            <a href='/fruits/<%=[i]%>'>
+                <%=fruit[i].name %>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+
+
+</body>
+</html>

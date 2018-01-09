@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Fruit page</h1>
+	<h3>this is a fruit page</h3>
+
+		<!-- Print name and color -->
+	<p>	The <%=fruit.name;%> is <%=fruit.color;%>
+		<!-- check the ripeness -->
+	<% if(fruit.readyToEat == true){ %>
+		and it is ready to eat!
+	<%	} else { %> 
+			it is absolutely not ready to eat <% } %>
+	</p>
+	</br>
+
+	<a href="/fruits/"> back </a>
+
+
+</body>
+</html>
