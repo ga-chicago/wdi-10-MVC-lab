@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Missions to Mars</title>
 </head>
 <body>
+	Missions to Mars since 1996:
+	<ul>
+		<% for(let i = 0; i < missions.length; i++) { %>
+			<li>
+				<a href="/missions/mission<%= i %>"><%=missions[i].name; %></a>
+			</li>
+		<% } %>
+	</ul>
+
 
 </body>
 </html>
