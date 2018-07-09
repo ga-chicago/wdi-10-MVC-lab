@@ -7,11 +7,11 @@
 	<h1>Fruit Index Page</h1>
 
 	<ul>
-		<li> <a href="./fruits/0"><%=  fruit[0].name  %></a></li>
-		<li> <a href="./fruits/1"><%=  fruit[1].name  %></a></li>
-		<li> <a href="./fruits/2"><%=  fruit[2].name  %></a></li>
-		<li> <a href="./fruits/3"><%=  fruit[3].name  %></a></li>
-		<li> <a href="./fruits/4"><%=  fruit[4].name  %></a></li>
+    <% for (let i = 0; i < fruit.length; i++) { -%>
+      <li>
+        <a href="./fruits/<%= i %>"><%= fruit[i].name %></a>
+      </li>
+    <% } -%>
 	</ul>
 
 

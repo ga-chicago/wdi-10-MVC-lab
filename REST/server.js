@@ -26,21 +26,21 @@ app.get("/fruits", (req, res) => {
 
 
 
-app.get("/fruits/:index", (req, res) => {
-	
+app.get("/fruits/:id", (req, res) => {
+
 	// We are going to make this send an object with our data
 	// The 2nd parameter must be an object
 	// We are going to use that object to show data in our template
 	// res.render() renders an template/view where res.send() only just sends text
 
 	res.render("show.ejs", {
-		fruit: fruits[req.params.index]
+		fruit: fruits[req.params.id]
 	});
 
 
 
 	// const fruitIndex = req.params.index;
-	
+
 	// let responseString = "Fruit # "+ fruitIndex+ " is "+ fruits[fruitIndex].name+ " and is ";
 	// if(!fruits[fruitIndex].readyToEat) responseString = responseString + "not ";
 	// responseString += "ready to eat"
